@@ -19,9 +19,6 @@ public class PhotonServer : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        // iniciar textos a 0
-        player1Text.text = "0";
-        player2Text.text = "0";
         ConnectToServer();
     }
 

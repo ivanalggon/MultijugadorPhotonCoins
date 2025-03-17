@@ -9,7 +9,11 @@ public class CollectedCoins : MonoBehaviourPunCallbacks
 
     public TextMeshProUGUI textScore1;
     public TextMeshProUGUI textScore2;
-
+    private void Start()
+    {
+        PlayerPrefs.SetInt("Player1Score", 0);
+        PlayerPrefs.SetInt("Player2Score", 0);
+    }
     private void Update()
     {
         if (PlayerPrefs.HasKey("Player1Score"))
